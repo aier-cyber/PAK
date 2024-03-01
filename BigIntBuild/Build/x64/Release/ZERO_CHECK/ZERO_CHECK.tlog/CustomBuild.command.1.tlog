@@ -1,0 +1,10 @@
+^C:\USERS\AE\BIGINTBUILD\BUILD\CMAKEFILES\A1C4C1775283530807D54AE1928CA713\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" -SC:/Users/ae/BigIntBuild -BC:/Users/ae/BigIntBuild/Build --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file C:/Users/ae/BigIntBuild/Build/test.sln
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd
